@@ -36,23 +36,23 @@ First set up the two virtual machines. The computer can be set up with specficat
 </p>
 <img width="781" alt="Capture1" src="https://github.com/FabAlcindor/ActiveDirectory/assets/142107701/4f6df035-57e8-4af9-89e9-cf6affbf639d">
 <br />
-</p>
+<p>
 Within the domain controller, access the firewall and changce inbound rules to allow for certain ICMP traffic. This will help with bringing the user into the server.
-<br />
+</p>
 
 <p>
 <img width="589" alt="Capture2" src="https://github.com/FabAlcindor/ActiveDirectory/assets/142107701/acb9d0d5-57f8-4106-9ed5-579a7e25719d">
-</p>
+<br />
 <p>
-On the Server, open the sever manager application and click "Add roles and features", This is how we will install active directory. The configurations could be adjusted to the needs of the user, but for this tutorial default configurations will work fine for most of the set up. When the installation process finsihes, click the flag to begin the deployment process. When the deployment window comes up make sure to click "add a new forrest".
+On the Server, open the sever manager application and click "Add roles and features", This is how we will install active directory. The configurations could be adjusted to the needs of the user, but for this tutorial default configurations will work fine for most of the set up. When the installation process finsihes, click the flag to begin the deployment process. When the deployment window comes up make sure to click "add a new forrest". Back on the Azure portal, set the user's DNS server to match the static DNS server of the server. This will connect the user to the server.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="783" alt="Capture3" src="https://github.com/FabAlcindor/ActiveDirectory/assets/142107701/0d86f1ed-3c02-4e7b-80ba-8264c810d991">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Lastly, use the domain controller to create credentials for a new user. Once the user is created, test the login on the user virtual machine to test the connection. To create new users, use the computer search bar to search for "Active Directory users and Computers" Once in the window, expand the domain and click the users orginzational unit. Click add new user and create the necssary credentials.
 </p>
 <br />
 
